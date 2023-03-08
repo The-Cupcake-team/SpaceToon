@@ -9,6 +9,7 @@
 
         <item name="background">@color/background</item>
         <!-- Status bar color. -->
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
         <item name="android:statusBarColor">?attr/background</item>
     </style>
 
