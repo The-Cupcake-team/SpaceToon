@@ -18,4 +18,8 @@
 
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="purple_char_color">#806ED8</color>
+    <color name="green_char_color">#6C9961</color>
+    <color name="yellow_char_color">#F7D651</color>
+    <color name="pink_char_color">#DE007B</color>
 </resources>
