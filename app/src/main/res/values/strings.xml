@@ -5,6 +5,8 @@
     <string name="welcome_back">Welcome Back</string>
     <string name="password">Password</string>
     <string name="logo_spactoon">logo spactoon</string>
-    <string name="emaill">Email</string>
+    <string name="email">Email</string>
     <string name="skip">Skip</string>
+    <string name="pasword">Password</string>
+
 </resources>

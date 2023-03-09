@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="background">@color/white</color>
+    <color name="background_input">@color/white</color>
 
     <color name="primary">#72BFC7</color>
     <color name="on_primary">@color/white</color>
@@ -14,6 +15,7 @@
     <color name="text_tertiary_38">#61000000</color>
 
     <color name="border">#14000000</color>
+    <color name="border_input">#14000000</color>
     <color name="card">#FAFAFA</color>
 
     <color name="black">#FF000000</color>

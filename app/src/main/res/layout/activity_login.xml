@@ -45,13 +45,13 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/large_button_height"
         android:layout_marginHorizontal="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_hug"
         android:background="@drawable/shap_button"
         android:elevation="0dp"
         android:text="@string/signin"
         android:textAllCaps="false"
         android:textColor="@color/on_primary"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/spacing_hug"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -70,13 +70,19 @@
 
     <EditText
         android:id="@+id/textView8"
+        style="@style/normalTextStyle"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/large_button_height"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/spacing_large"
         android:layout_marginTop="@dimen/spacing_large"
+        android:background="@drawable/bacground_label"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/spacing_large"
         android:paddingTop="@dimen/spacing_large"
         android:paddingBottom="@dimen/spacing_large"
-        android:text="@string/emaill"
+        android:textColor="@color/text_secondary_60"
+        android:textColorHint="@color/text_tertiary_38"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -95,13 +101,19 @@
 
     <EditText
         android:id="@+id/textView12"
+        style="@style/normalTextStyle"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/large_button_height"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/spacing_large"
         android:layout_marginTop="@dimen/spacing_large"
-        android:text="@string/password"
+        android:background="@drawable/bacground_label"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="@dimen/spacing_large"
+        android:textColor="@color/text_secondary_60"
+        android:textColorHint="@color/text_tertiary_38"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
-        tools:layout_editor_absoluteX="14dp" />
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
