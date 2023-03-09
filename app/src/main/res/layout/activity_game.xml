@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/on_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_left_arrow"
+            app:title="@string/guess_the_character" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_game_card"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="216dp"
+            android:layout_height="209dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/card" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+                style="@style/CheckedText"
+                android:drawableTint="#816ED9"
+                android:text="S"
+                android:textColor="#806ED8" />
+
+            <TextView
+                style="@style/CheckedText"
+                android:drawableTint="#6C9961"
+                android:text="m"
+                android:textColor="#6C9961" />
+
+            <TextView
+                style="@style/CheckedText"
+                android:drawableTint="#F7D651"
+                android:text="u"
+                android:textColor="#F7D651" />
+
+            <TextView
+                style="@style/CheckedText"
+                android:drawableTint="#816ED9"
+                android:text="r"
+                android:textColor="#806ED8" />
+
+            <TextView
+                style="@style/CheckedText"
+                android:drawableTint="#DE007B"
+                android:text="f"
+                android:textColor="#DE007B" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="32dp"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="S" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="t" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="m" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="z" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="l" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="u" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="x" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="r" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="32dp"
+            android:weightSum="3">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="a" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="f" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="i" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="32dp"
+        android:background="@drawable/rounded_btn"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayoutCompat"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

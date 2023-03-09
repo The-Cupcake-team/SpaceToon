@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">SpaceToon</string>
+    <string name="title">Games</string>
+    <string name="card_game_title">Guess The Anime</string>
+    <string name="guess_the_character">Guess The Character</string>
 </resources>

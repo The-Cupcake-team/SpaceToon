@@ -22,5 +22,8 @@
     <dimen name="small_icon_size">24dp</dimen>
 
     <dimen name="size_avatar">100dp</dimen>
+    <dimen name="width_game_card">160dp</dimen>
+    <dimen name="height_game_card">216dp</dimen>
+    <dimen name="raduis_game_card">16dp</dimen>
 
 </resources>
