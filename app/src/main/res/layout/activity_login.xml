@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".LoginActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/large_button_height"
         android:background="@color/background"
@@ -32,12 +34,12 @@
         android:id="@+id/imageView2"
         android:layout_width="131dp"
         android:layout_height="81dp"
-        android:layout_marginTop="123dp"
+        android:layout_marginTop="@dimen/spacing_x_large"
         android:background="@drawable/logo_spacetoon"
         android:contentDescription="@string/logo_spactoon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/appbar" />
 
     <Button
         android:id="@+id/button"
@@ -68,24 +70,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
-    <EditText
-        android:id="@+id/textView8"
-        style="@style/normalTextStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/spacing_large"
-        android:layout_marginTop="@dimen/spacing_large"
-        android:background="@drawable/bacground_label"
-        android:hint="@string/email"
-        android:inputType="textEmailAddress"
-        android:padding="@dimen/spacing_large"
-        android:paddingTop="@dimen/spacing_large"
-        android:paddingBottom="@dimen/spacing_large"
-        android:textColor="@color/text_secondary_60"
-        android:textColorHint="@color/text_tertiary_38"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/textView10"
@@ -114,6 +98,116 @@
         android:textColorHint="@color/text_tertiary_38"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         />
+    <EditText
+        android:id="@+id/textView8"
+        style="@style/normalTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:background="@drawable/bacground_label"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/spacing_large"
+        android:paddingTop="@dimen/spacing_large"
+        android:paddingBottom="@dimen/spacing_large"
+        android:textColor="@color/text_secondary_60"
+        android:textColorHint="@color/text_tertiary_38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+    <TextView
+        android:id="@+id/tv_or"
+        style="@style/captionTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_hug"
+        android:text="@string/or"
+        android:textColor="@color/text_tertiary_38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button" />
 
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/spacing_large"
+        android:layout_marginEnd="@dimen/spacing_small"
+        android:background="@color/text_variant_10"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_or"
+        app:layout_constraintEnd_toStartOf="@+id/tv_or"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_or" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:layout_marginEnd="@dimen/spacing_large"
+        android:background="@color/text_variant_10"
+        app:layout_constraintBottom_toBottomOf="@id/tv_or"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_or"
+        app:layout_constraintTop_toTopOf="@id/tv_or" />
+
+    <ImageButton
+        android:id="@+id/twitter_login"
+        android:layout_width="@dimen/medium_icon_size"
+        android:layout_height="@dimen/medium_icon_size"
+        android:layout_marginTop="@dimen/spacing_hug"
+        android:background="@color/background"
+        android:contentDescription="@string/sign_in_with_twitter"
+        android:src="@drawable/icon_twitter"
+        app:layout_constraintEnd_toEndOf="@+id/tv_or"
+        app:layout_constraintStart_toStartOf="@+id/tv_or"
+        app:layout_constraintTop_toBottomOf="@id/tv_or" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="@dimen/medium_icon_size"
+        android:layout_height="@dimen/medium_icon_size"
+        android:layout_marginStart="@dimen/spacing_x_large"
+        android:background="@color/background"
+        android:contentDescription="@string/sign_in_with_facebook"
+        android:src="@drawable/icon_facebook"
+        app:layout_constraintStart_toEndOf="@id/twitter_login"
+        app:layout_constraintTop_toTopOf="@id/twitter_login" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="@dimen/medium_icon_size"
+        android:layout_height="@dimen/medium_icon_size"
+        android:layout_marginEnd="@dimen/spacing_x_large"
+        android:background="@color/background"
+        android:contentDescription="@string/sign_in_with_google"
+        android:src="@drawable/icon_google"
+        app:layout_constraintEnd_toStartOf="@id/twitter_login"
+        app:layout_constraintTop_toTopOf="@id/twitter_login" />
+
+
+    <TextView
+        android:id="@+id/tv_create"
+        style="@style/captionTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_have_an_account"
+        android:textColor="@color/text_tertiary_38"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_create1"
+        app:layout_constraintEnd_toStartOf="@+id/tv_create1" />
+
+    <TextView
+        android:id="@+id/tv_create1"
+        style="@style/captionSemiBoldTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_hug"
+        android:text="@string/create_a_new_account"
+        android:textColor="@color/text_secondary_60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.80"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
