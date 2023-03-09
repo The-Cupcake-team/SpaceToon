@@ -17,11 +17,13 @@
         android:paddingVertical="@dimen/spacing_small"
         style="@style/captionSemiBoldTextStyle"
         android:text="@string/edit_profile"
+        android:clickable="true"
         android:textColor="@color/white"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="@+id/image_profile"
         app:layout_constraintStart_toStartOf="@+id/image_profile"
-        app:layout_constraintTop_toBottomOf="@+id/image_profile" />
+        app:layout_constraintTop_toBottomOf="@+id/image_profile"
+        android:focusable="true" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/image_profile"
