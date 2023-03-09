@@ -67,4 +67,13 @@
         <item name="android:textSize">@dimen/font_size_over_caption</item>
     </style>
 
+    <style name="normalTextStyle.profileTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/text_secondary_60</item>
+        <item name="android:padding">@dimen/spacing_large</item>
+        <item name="android:textSize">@dimen/font_size_normal</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    
+
+
 </resources>
