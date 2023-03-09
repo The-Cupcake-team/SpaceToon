@@ -28,7 +28,8 @@
             android:drawablePadding="@dimen/spacing_large"
             android:text="@string/guess_the_character"
             android:textColor="@color/text_primary_87"
-            app:drawableStartCompat="@drawable/left_arrow" />
+            app:drawableStartCompat="@drawable/left_arrow"
+            app:drawableTint="@color/text_primary_87" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
