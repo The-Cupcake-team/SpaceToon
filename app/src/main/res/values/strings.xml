@@ -3,4 +3,15 @@
     <string name="title">Games</string>
     <string name="card_game_title">Guess The Anime</string>
     <string name="guess_the_character">Guess The Character</string>
+    <string name="s_char">S</string>
+    <string name="m_char">m</string>
+    <string name="u_char">u</string>
+    <string name="r_char">r</string>
+    <string name="f_char">f</string>
+    <string name="t_char">t</string>
+    <string name="z_char">z</string>
+    <string name="l_char">l</string>
+    <string name="x_char">x</string>
+    <string name="a_char">a</string>
+    <string name="i_char">i</string>
 </resources>
