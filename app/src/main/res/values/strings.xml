@@ -14,4 +14,6 @@
     <string name="x_char">x</string>
     <string name="a_char">a</string>
     <string name="i_char">i</string>
+    <string name="smurf_image">smurf image</string>
+    <string name="next_word">Next</string>
 </resources>
