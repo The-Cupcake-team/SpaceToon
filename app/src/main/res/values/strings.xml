@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">SpaceToon</string>
-    <string name="signin">Sign in</string>
+    <string name="sign_in">Sign in</string>
     <string name="forget_your_password">Forget your password?</string>
     <string name="welcome_back">Welcome Back</string>
     <string name="password">Password</string>
@@ -13,6 +13,4 @@
     <string name="sign_in_with_google">sign in with google</string>
     <string name="don_t_have_an_account">Don\'t have an account? </string>
     <string name="create_a_new_account">Create a new account</string>
-    <string name="pasword">Password</string>
-
 </resources>

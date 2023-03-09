@@ -48,9 +48,9 @@
         android:layout_height="@dimen/large_button_height"
         android:layout_marginHorizontal="@dimen/spacing_large"
         android:layout_marginTop="@dimen/spacing_hug"
-        android:background="@drawable/shap_button"
+        android:background="@drawable/background_button"
         android:elevation="0dp"
-        android:text="@string/signin"
+        android:text="@string/sign_in"
         android:textAllCaps="false"
         android:textColor="@color/on_primary"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,14 +90,14 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/spacing_large"
         android:layout_marginTop="@dimen/spacing_large"
-        android:background="@drawable/bacground_label"
+        android:background="@drawable/background_edit_text"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:padding="@dimen/spacing_large"
         android:textColor="@color/text_secondary_60"
         android:textColorHint="@color/text_tertiary_38"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
     <EditText
         android:id="@+id/textView8"
         style="@style/normalTextStyle"
@@ -105,7 +105,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/spacing_large"
         android:layout_marginTop="@dimen/spacing_large"
-        android:background="@drawable/bacground_label"
+        android:background="@drawable/background_edit_text"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:padding="@dimen/spacing_large"
@@ -116,6 +116,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
     <TextView
         android:id="@+id/tv_or"
         style="@style/captionTextStyle"
