@@ -19,14 +19,14 @@
             android:layout_height="@dimen/large_button_height"
             android:background="@color/background"
             android:gravity="center_vertical"
-            android:paddingHorizontal="@dimen/spacing_large"
-            app:elevation="0dp"
+            android:padding="@dimen/spacing_large"
+            app:elevation="@dimen/zero"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/tv_skip"
+                android:id="@+id/text_skip"
                 style="@style/normalMediumTextStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -34,13 +34,14 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:text="@string/skip"
+                android:layout_marginHorizontal="@dimen/spacing_small"
                 android:textColor="@color/text_tertiary_38" />
 
         </com.google.android.material.appbar.AppBarLayout>
 
 
         <ImageView
-            android:id="@+id/iv_logo"
+            android:id="@+id/logo_app"
             android:layout_width="@dimen/logo_width"
             android:layout_height="@dimen/logo_height"
             android:layout_marginTop="@dimen/spacing_x_large"
@@ -76,10 +77,10 @@
             android:textColor="@color/text_secondary_60"
             android:textSize="@dimen/font_size_caption"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_password" />
+            app:layout_constraintTop_toBottomOf="@+id/input_password" />
 
         <TextView
-            android:id="@+id/tv_welcome"
+            android:id="@+id/text_welcome"
             style="@style/titleSemiBoldTextStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -88,11 +89,11 @@
             android:textColor="@color/text_secondary_60"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+            app:layout_constraintTop_toBottomOf="@+id/logo_app" />
 
         <EditText
-            android:id="@+id/et_email"
-            style="@style/editTextStyle"
+            android:id="@+id/input_email"
+            style="@style/normalTextStyle.input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/spacing_large"
@@ -102,11 +103,11 @@
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_welcome" />
+            app:layout_constraintTop_toBottomOf="@+id/text_welcome" />
 
         <EditText
-            android:id="@+id/et_password"
-            style="@style/editTextStyle"
+            android:id="@+id/input_password"
+            style="@style/normalTextStyle.input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/spacing_large"
@@ -114,12 +115,12 @@
             android:autofillHints="password"
             android:hint="@string/password"
             android:inputType="textPassword"
-            app:layout_constraintEnd_toEndOf="@+id/et_email"
-            app:layout_constraintStart_toStartOf="@+id/et_email"
-            app:layout_constraintTop_toBottomOf="@+id/et_email" />
+            app:layout_constraintEnd_toEndOf="@+id/input_email"
+            app:layout_constraintStart_toStartOf="@+id/input_email"
+            app:layout_constraintTop_toBottomOf="@+id/input_email" />
 
         <TextView
-            android:id="@+id/tv_or"
+            android:id="@+id/text_or"
             style="@style/captionTextStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -137,10 +138,10 @@
             android:layout_marginStart="@dimen/spacing_large"
             android:layout_marginEnd="@dimen/spacing_small"
             android:background="@color/text_variant_10"
-            app:layout_constraintBottom_toBottomOf="@+id/tv_or"
-            app:layout_constraintEnd_toStartOf="@+id/tv_or"
+            app:layout_constraintBottom_toBottomOf="@+id/text_or"
+            app:layout_constraintEnd_toStartOf="@+id/text_or"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/tv_or" />
+            app:layout_constraintTop_toTopOf="@+id/text_or" />
 
         <View
             android:id="@+id/divider2"
@@ -149,48 +150,48 @@
             android:layout_marginStart="@dimen/spacing_small"
             android:layout_marginEnd="@dimen/spacing_large"
             android:background="@color/text_variant_10"
-            app:layout_constraintBottom_toBottomOf="@id/tv_or"
+            app:layout_constraintBottom_toBottomOf="@id/text_or"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/tv_or"
-            app:layout_constraintTop_toTopOf="@id/tv_or" />
+            app:layout_constraintStart_toEndOf="@id/text_or"
+            app:layout_constraintTop_toTopOf="@id/text_or" />
 
         <ImageButton
-            android:id="@+id/twitter_login"
+            android:id="@+id/btn_twitter_login"
             android:layout_width="@dimen/medium_icon_size"
             android:layout_height="@dimen/medium_icon_size"
             android:layout_marginTop="@dimen/spacing_hug"
             android:background="@color/background"
             android:contentDescription="@string/sign_in_with_twitter"
             android:src="@drawable/icon_twitter"
-            app:layout_constraintEnd_toEndOf="@+id/tv_or"
-            app:layout_constraintStart_toStartOf="@+id/tv_or"
-            app:layout_constraintTop_toBottomOf="@id/tv_or" />
+            app:layout_constraintEnd_toEndOf="@+id/text_or"
+            app:layout_constraintStart_toStartOf="@+id/text_or"
+            app:layout_constraintTop_toBottomOf="@id/text_or" />
 
         <ImageButton
-            android:id="@+id/facebook_login"
+            android:id="@+id/btn_facebook_login"
             android:layout_width="@dimen/medium_icon_size"
             android:layout_height="@dimen/medium_icon_size"
             android:layout_marginStart="@dimen/spacing_x_large"
             android:background="@color/background"
             android:contentDescription="@string/sign_in_with_facebook"
             android:src="@drawable/icon_facebook"
-            app:layout_constraintStart_toEndOf="@id/twitter_login"
-            app:layout_constraintTop_toTopOf="@id/twitter_login" />
+            app:layout_constraintStart_toEndOf="@id/btn_twitter_login"
+            app:layout_constraintTop_toTopOf="@id/btn_twitter_login" />
 
         <ImageButton
-            android:id="@+id/google_login"
+            android:id="@+id/btn_google_login"
             android:layout_width="@dimen/medium_icon_size"
             android:layout_height="@dimen/medium_icon_size"
             android:layout_marginEnd="@dimen/spacing_x_large"
             android:background="@color/background"
             android:contentDescription="@string/sign_in_with_google"
             android:src="@drawable/icon_google"
-            app:layout_constraintEnd_toStartOf="@id/twitter_login"
-            app:layout_constraintTop_toTopOf="@id/twitter_login" />
+            app:layout_constraintEnd_toStartOf="@id/btn_twitter_login"
+            app:layout_constraintTop_toTopOf="@id/btn_twitter_login" />
 
 
         <TextView
-            android:id="@+id/tv_query"
+            android:id="@+id/text_do_not_have_account"
             style="@style/captionTextStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -198,13 +199,13 @@
             android:text="@string/don_t_have_an_account"
             android:textColor="@color/text_tertiary_38"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/tv_create"
+            app:layout_constraintEnd_toStartOf="@+id/text_create_account"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/twitter_login" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_twitter_login" />
 
         <TextView
-            android:id="@+id/tv_create"
+            android:id="@+id/text_create_account"
             style="@style/captionSemiBoldTextStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -213,8 +214,8 @@
             android:textColor="@color/text_secondary_60"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/tv_query"
-            app:layout_constraintTop_toTopOf="@+id/tv_query" />
+            app:layout_constraintStart_toEndOf="@+id/text_do_not_have_account"
+            app:layout_constraintTop_toTopOf="@+id/text_do_not_have_account" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

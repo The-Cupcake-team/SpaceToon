@@ -74,14 +74,12 @@
         <item name="android:layout_gravity">center_vertical</item>
     </style>
 
-
-
-
-    <style name="editTextStyle" parent="normalTextStyle">
+    <style name="normalTextStyle.input" parent="normalTextStyle">
         <item name="android:textColor">@color/text_secondary_60</item>
         <item name="android:textColorHint">@color/text_tertiary_38</item>
         <item name="android:background">@drawable/background_edit_text</item>
         <item name="android:padding">@dimen/spacing_large</item>
         <item name="android:textCursorDrawable">@null</item>
     </style>
+
 </resources>

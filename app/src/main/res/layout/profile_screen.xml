@@ -76,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/text_dark_theme" />
 
     <ImageView
-        android:id="@+id/arrowButton"
+        android:id="@+id/icon_arrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/spacing_large"

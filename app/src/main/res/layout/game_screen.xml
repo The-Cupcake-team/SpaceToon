@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background">
-
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -14,7 +12,7 @@
         android:backgroundTint="@color/background"
         android:gravity="center_vertical"
         android:paddingVertical="@dimen/spacing_large"
-        app:elevation="0dp"
+        app:elevation="@dimen/zero"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -47,9 +45,9 @@
 
         <ImageView
             android:id="@+id/img"
-            android:layout_width="@dimen/game_image_width"
+            android:layout_width="wrap_content"
             android:layout_height="@dimen/game_image_height"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="@dimen/spacing_hug"
             android:contentDescription="@string/smurf_image"
             android:scaleType="centerCrop"
             android:src="@drawable/card" />
@@ -58,7 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_x_large"
-            android:layout_marginBottom="@dimen/spacing_x_x_x_large"
+            android:layout_marginBottom="@dimen/spacing_hug"
             android:orientation="horizontal"
             android:paddingStart="@dimen/spacing_x_large"
             android:paddingEnd="@dimen/spacing_x_large"
@@ -103,7 +101,7 @@
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/linearLayoutCompat"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/zero"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingHorizontal="@dimen/spacing_x_x_large"
@@ -216,15 +214,15 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="0dp"
+        style="@style/RoundedButton"
+        android:layout_width="@dimen/zero"
         android:layout_height="@dimen/large_button_height"
         android:text="@string/next_word"
         android:textAllCaps="false"
-        style="@style/RoundedButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/linearLayoutCompat"
         app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat"
         app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
 
-
+    
 </androidx.constraintlayout.widget.ConstraintLayout>
