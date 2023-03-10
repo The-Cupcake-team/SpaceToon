@@ -198,13 +198,13 @@
                 android:text="@string/a_char" />
 
             <androidx.appcompat.widget.AppCompatCheckBox
-                android:id="@+id/tinth_char_box"
+                android:id="@+id/tenth_char_box"
                 style="@style/CheckBox"
                 android:background="@drawable/rounded_check_box"
                 android:text="@string/f_char" />
 
             <androidx.appcompat.widget.AppCompatCheckBox
-                android:id="@+id/elevnth_char_box"
+                android:id="@+id/eleventh_char_box"
                 style="@style/CheckBox"
                 android:background="@drawable/rounded_check_box"
                 android:text="@string/i_char" />
@@ -217,12 +217,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_btn"
+        android:layout_height="@dimen/large_button_height"
         android:text="@string/next_word"
         android:textAllCaps="false"
-        android:textColor="@color/on_primary"
-        android:textSize="@dimen/font_size_normal"
+        style="@style/RoundedButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/linearLayoutCompat"
         app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat"
