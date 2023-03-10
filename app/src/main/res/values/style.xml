@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:layout_width">@dimen/game_check_box_size</item>
+        <item name="android:layout_height">@dimen/game_check_box_size</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/font_size_x_x_large</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">@dimen/spacing_small</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/single_day</item>
+    </style>
+
+    <style name="CheckedText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">@dimen/spacing</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize"> @dimen/font_size_x_x_large</item>
+        <item name="android:drawableBottom">@drawable/ic_circles</item>
+        <item name="android:fontFamily">@font/single_day</item>
+    </style>
+
+    <style name="RoundedButton">
+        <item name = "android:background">@drawable/rounded_btn </item>
+        <item name = "android:gravity">center</item>
+        <item name = "android:textColor">@color/on_primary</item>
+        <item name = "android:fontFamily">@font/poppins_semi_bold</item>
+        <item name = "android:textSize">@dimen/font_size_normal</item>
+    </style>
+
+</resources>

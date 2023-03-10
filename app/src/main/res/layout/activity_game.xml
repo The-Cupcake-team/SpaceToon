@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/large_button_height"
+        android:backgroundTint="@color/background"
+        android:gravity="center_vertical"
+        android:paddingVertical="@dimen/spacing_large"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            style="@style/normalSemiBoldTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:drawablePadding="@dimen/spacing_large"
+            android:text="@string/guess_the_character"
+            android:textColor="@color/text_primary_87"
+            app:drawableStartCompat="@drawable/left_arrow"
+            app:drawableTint="@color/text_primary_87" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_large"
+        android:background="@drawable/rounded_game_card"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/game_image_width"
+            android:layout_height="@dimen/game_image_height"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/smurf_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/card" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_x_large"
+            android:layout_marginBottom="@dimen/spacing_x_x_x_large"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/spacing_x_large"
+            android:paddingEnd="@dimen/spacing_x_large"
+            android:weightSum="5">
+
+            <TextView
+                style="@style/CheckedText"
+                android:text="@string/s_char"
+                android:textColor="@color/purple_char_color"
+                app:drawableTint="#806ED8" />
+
+            <TextView
+                style="@style/CheckedText"
+                android:text="@string/m_char"
+                android:textColor="@color/green_char_color"
+                app:drawableTint="#6C9961" />
+
+            <TextView
+                style="@style/CheckedText"
+                android:text="@string/u_char"
+                android:textColor="@color/yellow_char_color"
+                app:drawableTint="@color/yellow_char_color" />
+
+            <TextView
+                style="@style/CheckedText"
+                android:text="@string/r_char"
+                android:textColor="@color/purple_char_color"
+                app:drawableTint="@color/purple_char_color" />
+
+            <TextView
+                style="@style/CheckedText"
+                android:text="@string/f_char"
+                android:textColor="@color/pink_char_color"
+                app:drawableTint="@color/pink_char_color" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/spacing_x_x_large"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/first_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:layout_marginBottom="@dimen/spacing_small"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/first_check_box"
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="@string/s_char" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/second_char_box"
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="@string/t_char" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/third_char_box"
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="@string/m_char" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/fourth_char_box"
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="@string/z_char" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/second_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/spacing_small"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/fifth_check_box"
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="@string/l_char" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/sixth_check_box"
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="@string/u_char" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/seventh_check_box"
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="@string/x_char" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/eighth_check_box"
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="@string/r_char" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/third_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/spacing_small"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/font_size_x_x_large"
+            android:weightSum="3">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/ninth_check_box"
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="@string/a_char" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/tenth_char_box"
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="@string/f_char" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/eleventh_char_box"
+                style="@style/CheckBox"
+                android:background="@drawable/rounded_check_box"
+                android:text="@string/i_char" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="@dimen/large_button_height"
+        android:text="@string/next_word"
+        android:textAllCaps="false"
+        style="@style/RoundedButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayoutCompat"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
