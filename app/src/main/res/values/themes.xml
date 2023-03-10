@@ -73,7 +73,8 @@
         <item name="android:textSize">@dimen/font_size_normal</item>
         <item name="android:layout_gravity">center_vertical</item>
     </style>
-    
+
+
 
 
 </resources>
