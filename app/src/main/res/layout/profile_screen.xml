@@ -11,6 +11,7 @@
         android:layout_width="@dimen/size_avatar"
         android:layout_height="@dimen/size_avatar"
         android:layout_marginTop="@dimen/spacing_x_hug"
+        android:src="@drawable/profile"
         android:background="@drawable/border_image_profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,22 +41,26 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/large_button_height"
         android:layout_marginHorizontal="@dimen/spacing_large"
-        android:layout_marginTop="@dimen/spacing_x_large"
-        android:background="@drawable/large_textview"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/background_text_card"
         android:text="@string/dark_theme"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_edite_profile" />
 
     <androidx.appcompat.widget.SwitchCompat
+        style="@style/TextAppearance.AppCompat.Widget.Switch"
         android:id="@+id/switch_theme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingEnd="@dimen/spacing_small"
-        android:thumb="@drawable/thumb"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:thumb="@drawable/circle_switch"
+
         app:layout_constraintBottom_toBottomOf="@+id/text_dark_theme"
         app:layout_constraintEnd_toEndOf="@+id/text_dark_theme"
         app:layout_constraintTop_toTopOf="@+id/text_dark_theme"
-        app:track="@drawable/track"
+        app:track="@drawable/switch_track"
         tools:ignore="RtlSymmetry" />
 
     <com.google.android.material.textview.MaterialTextView
@@ -64,7 +69,7 @@
         android:layout_width="@dimen/zero"
         android:layout_height="@dimen/large_button_height"
         android:layout_marginTop="@dimen/spacing_large"
-        android:background="@drawable/large_textview"
+        android:background="@drawable/background_text_card"
         android:text="@string/using_time"
         app:layout_constraintEnd_toEndOf="@+id/text_dark_theme"
         app:layout_constraintStart_toStartOf="@+id/text_dark_theme"

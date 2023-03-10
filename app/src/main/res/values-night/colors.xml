@@ -15,5 +15,6 @@
 
     <color name="border">@color/text_tertiary_38</color>
     <color name="card">@color/secondary</color>
+    <color name="switch_background_unchecked">#0FFFFFFF</color>
 
 </resources>
