@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="background">#1F1D2B</color>
+    <color name="background_input">@color/secondary</color>
 
     <color name="primary">#6C5ECF</color>
     <color name="on_primary">@color/white</color>
@@ -12,8 +13,10 @@
     <color name="text_primary_87">#DEFFFFFF</color>
     <color name="text_secondary_60">#99FFFFFF</color>
     <color name="text_tertiary_38">#61FFFFFF</color>
+    <color name="text_variant_10">#1AFFFFFF</color>
 
     <color name="border">@color/text_tertiary_38</color>
+    <color name="border_input">#00FFFFFF</color>
     <color name="card">@color/secondary</color>
     <color name="switch_background_unchecked">#0FFFFFFF</color>
 

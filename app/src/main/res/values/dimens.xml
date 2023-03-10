@@ -7,14 +7,15 @@
     <dimen name="spacing_medium">12dp</dimen>
     <dimen name="spacing_large">16dp</dimen>
     <dimen name="spacing_x_large">32dp</dimen>
-    <dimen name="spacing_hug">42dp</dimen>
     <dimen name="spacing_x_hug">72dp</dimen>
+    <dimen name="spacing_hug">40dp</dimen>
 
     <dimen name="radius_small">8dp</dimen>
     <dimen name="radius_medium">16dp</dimen>
     <dimen name="radius_large">24dp</dimen>
     <dimen name="circle_radius">100dp</dimen>
 
+     <dimen name="border_size">2dp</dimen>
     <dimen name="font_size_title">20sp</dimen>
     <dimen name="font_size_normal">16sp</dimen>
     <dimen name="font_size_caption">12sp</dimen>
@@ -24,10 +25,15 @@
     <dimen name="large_button_height">56dp</dimen>
 
     <dimen name="small_icon_size">24dp</dimen>
+    <dimen name="medium_icon_size">48dp</dimen>
 
     <dimen name="size_avatar">100dp</dimen>
     <dimen name="height_boarder">2dp</dimen>
     <dimen name="height_switch">30dp</dimen>
     <dimen name="weight_switch">42dp</dimen>
 
+    <dimen name="divider_width">0dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="logo_width">131dp</dimen>
+    <dimen name="logo_height">81dp</dimen>
 </resources>
