@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/large_button_height"
+        android:paddingVertical="@dimen/spacing_large"
+        android:background="@color/background"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/spacing_large"
+            android:layout_marginHorizontal="@dimen/spacing_large"
+            android:text="@string/music"
+            style="@style/normalSemiBoldTextStyle"
+            app:drawableStartCompat="@drawable/left_arrow"
+            app:drawableEndCompat="@drawable/round_search_24"
+            app:drawableTint="@color/text_primary_87"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/spacing_large"
+        android:layout_marginHorizontal="@dimen/spacing_large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/captionTextStyle"
+            android:text="@string/favorite_artists"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:layout_marginBottom="@dimen/spacing_large">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/singer_image_width"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="@dimen/spacing_large">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        style="@style/singerImage"
+                        android:src="@drawable/rasha"
+                        app:shapeAppearanceOverlay="@style/circleImageView"/>
+
+                    <TextView
+                        android:text="@string/rasha_rizk"
+                        style="@style/singer_name"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/singer_image_width"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="@dimen/spacing_large">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        style="@style/singerImage"
+                        android:src="@drawable/tarek"
+                        app:shapeAppearanceOverlay="@style/circleImageView"/>
+
+                    <TextView
+                        android:text="@string/tarek_alarabi"
+                        style="@style/singer_name"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/singer_image_width"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="@dimen/spacing_large">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        style="@style/singerImage"
+                        android:src="@drawable/muhamed"
+                        app:shapeAppearanceOverlay="@style/circleImageView"/>
+
+                    <TextView
+                        android:text="@string/muhammad_tarek"
+                        style="@style/singer_name"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="@dimen/spacing_large">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        style="@style/singerImage"
+                        android:src="@drawable/dima"
+                        app:shapeAppearanceOverlay="@style/circleImageView"/>
+
+                    <TextView
+                        android:text="@string/dima_tarek"
+                        style="@style/singer_name"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="@dimen/spacing_large">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        style="@style/singerImage"
+                        android:src="@drawable/asim"
+                        app:shapeAppearanceOverlay="@style/circleImageView"/>
+
+                    <TextView
+                        android:text="@string/asim_sugar"
+                        style="@style/singer_name"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="@dimen/spacing_large">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        style="@style/singerImage"
+                        android:src="@drawable/rasha"
+                        app:shapeAppearanceOverlay="@style/circleImageView"/>
+
+                    <TextView
+                        android:text="@string/rasha_rizk"
+                        style="@style/singer_name"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
