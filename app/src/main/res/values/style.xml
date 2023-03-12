@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+    <style name="checkBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
         <item name="android:layout_width">@dimen/game_check_box_size</item>
         <item name="android:layout_height">@dimen/game_check_box_size</item>
         <item name="android:button">@null</item>
@@ -12,7 +12,7 @@
         <item name="android:fontFamily">@font/single_day</item>
     </style>
 
-    <style name="CheckedText">
+    <style name="checkedText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
@@ -23,7 +23,7 @@
         <item name="android:fontFamily">@font/single_day</item>
     </style>
 
-    <style name="RoundedButton">
+    <style name="roundedButton">
         <item name = "android:background">@drawable/rounded_btn </item>
         <item name = "android:gravity">center</item>
         <item name = "android:textColor">@color/on_primary</item>
