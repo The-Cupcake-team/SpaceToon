@@ -33,4 +33,11 @@
     <string name="i_char">i</string>
     <string name="smurf_image">smurf image</string>
     <string name="next_word">Next</string>
+    <string name="music">Music</string>
+    <string name="favorite_artists">Favorite Artists</string>
+    <string name="rasha_rizk">Rasha Rizk</string>
+    <string name="tarek_alarabi">Tarek Al-Arabi</string>
+    <string name="muhammad_tarek">Muhammad Tarek</string>
+    <string name="dima_tarek">Dima Tarek</string>
+    <string name="asim_sugar">Asim Sugar</string>
 </resources>
