@@ -58,7 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_x_large"
-            android:layout_marginBottom="@dimen/spacing_x_x_x_large"
+            android:layout_marginBottom="@dimen/spacing_x_x_large"
             android:orientation="horizontal"
             android:paddingStart="@dimen/spacing_x_large"
             android:paddingEnd="@dimen/spacing_x_large"
