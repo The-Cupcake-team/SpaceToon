@@ -20,8 +20,8 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_edite_profile"
         style="@style/captionSemiBoldTextStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/small_button_weight"
+        android:layout_height="@dimen/small_button_height"
         android:layout_marginTop="@dimen/spacing_large"
         android:background="@drawable/edit_profile_button_rounded"
         android:clickable="true"
@@ -48,13 +48,13 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_edite_profile" />
 
     <androidx.appcompat.widget.SwitchCompat
-        style="@style/TextAppearance.AppCompat.Widget.Switch"
         android:id="@+id/switch_theme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingEnd="@dimen/spacing_small"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
+        android:track="@drawable/switch_track"
         android:thumb="@drawable/circle_switch"
 
         app:layout_constraintBottom_toBottomOf="@+id/text_dark_theme"
@@ -85,5 +85,16 @@
         app:layout_constraintBottom_toBottomOf="@+id/text_using_timer"
         app:layout_constraintEnd_toEndOf="@+id/text_using_timer"
         app:layout_constraintTop_toTopOf="@+id/text_using_timer" />
+
+    <TextView
+        style="@style/captionTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_large"
+        android:text="@string/created_by_cupcake_team"
+        android:textColor="@color/text_tertiary_38"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

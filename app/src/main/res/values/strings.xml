@@ -33,4 +33,5 @@
     <string name="i_char">i</string>
     <string name="smurf_image">smurf image</string>
     <string name="next_word">Next</string>
+    <string name="created_by_cupcake_team">Created by Cupcake Team</string>
 </resources>
